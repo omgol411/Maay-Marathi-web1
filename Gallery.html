@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+    <head>
+<title> Gallery</title>
+        <link rel="stylesheet" href="gallery.css">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+        
+</head>
+<body>
+       <div class="menu-bar">
+                <div class="logo">
+                <img src="logo.png">
+                </div>
+                <ul>
+                    <li> <a href="index.html"> Home</a><i class="fa fa-home"></i>  </li>
+                    <li> <a href="About%20us.html">About club </a><i class="fa fa-clone"></i></li>
+                    <li> <a href="Event.html">Events</a><i class="fa fa-calendar"></i></li>
+                    <li> <a href="#">Blog</a> <i class="fa fa-rss"></i></li> 
+                    <li class="active"> <a href="Gallery.html">Gallary</a> <i class="fa fa-picture-o"></i></li> 
+                    <li><a href="contact%20page.html"> Contact</a><i class="fa fa-phone"></i></li>
+                </ul>
+    <section class="section-padding" id="Gallery">
+        <div class="container">
+        <!--title text-->
+        <div class="row">
+            <div class="col-sm-12">
+                    <h2 class="title text-centre">Memories</h2>
+            </div>
+        </div>
+            
+             <div class="container">
+             <div id="my-grid" class="grid-padding">
+                 <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="row"><img src="Gallery/A.jpg" class="fit-image" onclick="openModal();currentSlide(1)"></div>
+                                        <div class="row"><img src="Gallery/B.jpg.jpg" class="fit-image" onclick="openModal();currentSlide(2)"></div>
+                                        <div class="row"><img src="Gallery/d.jpg.jpg" class="fit-image" onclick="openModal();currentSlide(3)"></div>
+                                        <div class="row"><img src="Gallery/DSC_0085.JPG" class="fit-image" onclick="openModal();currentSlide(4)"></div>
+                                        <div class="row"><img src="Gallery/DSC_0034.JPG" class="fit-image" onclick="openModal();currentSlide(5)"></div>
+                                        <div class="row"><img src="Gallery/f.jpg" class="fit-image" onclick="openModal();current slide(6)"></div>
+                                        </div>
+                     
+                                      <div class="col-sm-4">
+                        <div class="row"><img src="Gallery/IMG_3013.JPG" class="fit-image" onclick="openModal();current slide(7)"></div>
+                                        <div class="row"><img src="Gallery/IMG_20190902_095422.jpg" class="fit-image" onclick="openModal();currentSlide(8)"></div>
+                                        <div class="row"><img src="Gallery/IMG_20190902_102116.jpg" class="fit-image" onclick="openModal();currentSlide(9)"></div>
+                                        <div class="row"><img src="Gallery/IMG_20190902_103323_1.jpg" class="fit-image" onclick="openModal();currentSlide(10)"></div>
+                                        <div class="row"><img src="Gallery/IMG_20190902_103525.jpg" class="fit-image" onclick="openModal();currentSlide(11)"></div>
+                                        <div class="row"><img src="Gallery/IMG_20190902_104628.jpg" class="fit-image" onclick="openModal();currentSlide(12)"></div>
+                     </div>
+                     
+                       <div class="col-sm-4">
+                        <div class="row"><img src="Gallery/PANO_20190902_111006.jpg" class="fit-image" onclick="openModal();current slide(13)"></div>
+                                        <div class="row"><img src="Gallery/IMG_20190902_105210_1.jpg" class="fit-image" onclick="openModal();currentSlide(14)"></div>
+                                        <div class="row"><img src="Gallery/IMG_20190902_110505.jpg" class="fit-image" onclick="openModal();currentSlide(15)"></div>
+                                        <div class="row"><img src="Gallery/IMG_20190902_110525.jpg" class="fit-image" onclick="openModal();currentSlide(16)"></div>
+                                        <div class="row"><img src="Gallery/IMG_20190902_112916.jpg" class="fit-image" onclick="openModal();currentSlide(17)"></div>
+                                        <div class="row"><img src="Gallery/IMG_20190902_115302.jpg" class="fit-image" onclick="openModal();currentSlide(18)"></div>
+                     </div>
+                     
+                       <div class="col-sm-4">
+                                        <div class="row"><img src="Gallery/IMG_20190902_202522.jpg" class="fit-image" onclick="openModal();currentSlide(19)"></div>
+                                        <div class="row"><img src="Gallery/IMG_20190902_203022.jpg" class="fit-image" onclick="openModal();currentSlide(20)"></div>
+                                        <div class="row"><img src="Gallery/IMG_20190902_204445.jpg" class="fit-image" onclick="openModal();currentSlide(21)"></div>
+                                        <div class="row"><img src="Gallery/IMG_20190902_204810.jpg" class="fit-image" onclick="openModal();currentSlide(22)"></div>
+                                        <div class="row"><img src="Gallery/IMG_20190902_205313.jpg" class="fit-image" onclick="openModal();currentSlide(23)"></div>
+                                        <div class="row"><img src="Gallery/IMG_20190905_185409.jpg" class="fit-image" onclick="openModal();currentSlide(24)"></div>
+                            <div class="row"><img src="Gallery/IMG_2861.JPG" class="fit-image" onclick="openModal();currentSlide(25)"></div>
+                     </div>
+                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+    <div id="my-modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+        <!--content for images-->
+        <div class="modal-content">
+            
+        <div class="my-slides">
+            <div class="numbertext">1/25</div>
+            <img src="Gallery/A.jpg" class="portrait-image">
+            </div>
+           <div class="my-slides">
+            <div class="numbertext">2/25</div>
+            <img src="Gallery/B.jpg.jpg" class="landscape-image">
+            </div>
+         <div class="my-slides">
+            <div class="numbertext">3/25</div>
+            <img src="Gallery/d.jpg.jpg" class="landscape-image">
+            </div>
+         <div class="my-slides">
+            <div class="numbertext">4/25</div>
+            <img src="Gallery/DSC_0085.JPG" class="landscape-image">
+            </div>
+         <div class="my-slides">
+            <div class="numbertext">5/25</div>
+            <img src="Gallery/DSC_0034.JPG" class="landscape-image">
+            </div>
+         <div class="my-slides">
+            <div class="numbertext">6/25</div>
+            <img src="Gallery/f.jpg" class="landscape-image">
+            </div>
+         <div class="my-slides">
+            <div class="numbertext">7/25</div>
+            <img src="Gallery/IMG_3013.JPG" class="landscape-image">
+            </div>
+         <div class="my-slides">
+            <div class="numbertext">8/25</div>
+            <img src="Gallery/IMG_20190902_095422.jpg" class="landscape-image">
+            </div>
+            <div class="my-slides">
+            <div class="numbertext">9/25</div>
+            <img src="Gallery/IMG_20190902_102116.jpg" class="landscape-image">
+            </div>
+         <div class="my-slides">
+            <div class="numbertext">10/25</div>
+            <img src="Gallery/IMG_20190902_103323_1.jpg" class="portrait-image">
+            </div>
+         <div class="my-slides">
+            <div class="numbertext">11/25</div>
+            <img src="Gallery/IMG_20190902_103525.jpg" class="portrait-image">
+            </div>
+         <div class="my-slides">
+            <div class="numbertext">12/25</div>
+            <img src="Gallery/IMG_20190902_104628.jpg" class="landscape-image">
+            </div>
+         <div class="my-slides">
+            <div class="numbertext">13/25</div>
+            <img src="Gallery/PANO_20190902_111006.jpg" class="portrait-image">
+            </div>
+             <div class="my-slides">
+            <div class="numbertext">14/25</div>
+            <img src="Gallery/IMG_20190902_105210_1.jpg" class="portrait-image">
+            </div>
+         <div class="my-slides">
+            <div class="numbertext">15/25</div>
+            <img src="Gallery/IMG_20190902_110505.jpg" class="landscape-image">
+            </div>
+         <div class="my-slides">
+            <div class="numbertext">16/25</div>
+            <img src="Gallery/IMG_20190902_110525.jpg" class="landscape-image">
+            </div>
+         <div class="my-slides">
+            <div class="numbertext">17/25</div>
+            <img src="Gallery/IMG_20190902_112916.jpg" class="landscape-image">
+            </div>
+         <div class="my-slides">
+            <div class="numbertext">18/25</div>
+            <img src="Gallery/IMG_20190902_115302.jpg" class="landscape-image">
+            </div>
+          <div class="my-slides">
+            <div class="numbertext">19/25</div>
+            <img src="Gallery/IMG_20190902_202522.jpg" class="portrait-image">
+            </div>
+          <div class="my-slides">
+            <div class="numbertext">20/25</div>
+            <img src="Gallery/IMG_20190902_203022.jpg" class="landscape-image">
+            </div>
+          <div class="my-slides">
+            <div class="numbertext">21/25</div>
+            <img src="Gallery/IMG_20190902_204445.jpg" class="landscape-image">
+            </div>
+          <div class="my-slides">
+            <div class="numbertext">22/25</div>
+            <img src="Gallery/IMG_20190902_204810.jpg" class="landscape-image">
+            </div>
+              <div class="my-slides">
+            <div class="numbertext">23/25</div>
+            <img src="Gallery/IMG_20190902_205313.jpg" class="landscape-image">
+            </div>
+              <div class="my-slides">
+            <div class="numbertext">24/25</div>
+            <img src="Gallery/IMG_20190905_185409.jpg" class="landscape-image">
+            </div>
+              <div class="my-slides">
+            <div class="numbertext">25/25</div>
+            <img src="Gallery/IMG_2861.JPG" class="landscape-image">
+            </div>
+            
+            <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlides(1)">&#10095;</a>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+    function openModal()
+        {
+            document.getElementById('my-modal').style.display= "inline-flex";
+        }
+        /*close modal */
+        function closeModal()
+        {
+            document.getElementById('my-modal').style.display="none"
+        }
+        var slideIndexJS=1;
+        
+        showSlides(slideIndexJS);
+        
+        function changeSlides(n)
+        {
+            showSlides(slideIndexJS += n);
+        }
+        function currentSlide(n)
+        {
+            showSlides(slideIndexJS = n);
+        }
+        function showSlides(n)
+        {
+            var i;
+            
+            var slidesJS = document.getElementsByClassName("my-slides");
+            
+            if (n > slidesJS.length){    slideIndexJS = 1;}
+            if (n < 1) { slideIndexJS = slidesJS.length;}
+            
+            for (i=0; i < slidesJS.length; i++){
+                slidesJS[i].style.display="none";
+                
+                slidesJS[slideIndexJS -1].style.display ="block";
+            }
+        }
+    </script>
+</body>
+        
+
+
+
+</html>
