@@ -6,7 +6,7 @@
 }
 body
 {
-    background-image:linear-gradient(#eeeeee3d,#eeeeee3d),url(background.jpg);
+    background-image:linear-gradient(#ffffff0d,#ffffff0d),url(background.png);
     box-sizing: border-box;
     font-size: 15px;
     display: flex;
@@ -40,8 +40,8 @@ body
 }
 .active, .menu-bar ul li:hover
 {
-    background-color:skyblue;
-    border-radius: 3px;
+    background-color:orange;
+    border-radius: 2.5px;
     transition: 0.6s ease;
 }
 .menu-bar .fa
@@ -52,23 +52,35 @@ body
 .logo img{
     float: left;
     width: 150px;
-    height: auto
+    height: 150px;
+    position: absolute;
+    top: 6%;
+    left: 2%
 }       
 .image1
 {
     width: 300px;
+    height: 190px;
+    position: absolute;
+    left: 8%;
+    top: 83%;     
+}
+.quote
+{
+    color: #ffff00ba;
+    width: auto;
     height: auto;
     position: absolute;
-    left: 22%;
-    top: 31%;     
+    left: 14%;
+    top: 9%;
 }
    .title 
-@import url("https://fonts.googleapis.com/css?family=Bad+Script");
+@import url("https://fonts.googleapis.com/css?family=Manuale:wght@700");
 {
     display: flex;
     height: 100vh;
     background: #000;
-    font-family: 'Bad Script', cursive;
+    font-family: 'Manuale', cursive;
 }
 h1
 {
@@ -78,14 +90,14 @@ h1
     height: 10vh;
     display: flex;
     font-size: 9em;
-    font-family:'Bad Script',cursive;
-    top: 57%;
-    left: 50%;
+    font-family:'Manuale';
+    top: 35%;
+    left: 42%;
 }
 h1 span
 {
     display: table-cell;
-    animation: animate 2s linear infinite;
+    animation: animate 2.5s linear infinite;
 }
 h1 span:nth-child(1)
 {
@@ -127,26 +139,31 @@ h1 span:nth-child(10)
 {
     animation-delay: 2.25s;
 }
+h1 span:nth-child(11)
+{
+    animation-delay: 2.5s;
+}
 @keyframes animate
 {
     0%, 100%
     {
         color: white;
-        filter: blur(2px);
-        text-shadow: 0 0 10px orange,
+        
+        text-shadow: 0 0 10px #ffffff,
                              0 0 20px orange ,
                              0 0 40px orange,
                              0 0 80px orange,
                              0 0 120px orange,
                              0 0 200px orange,
                              0 0 300px orange,
-                             0 0 400px orange;
+                             0 0 400px orange,
+                             0 0 600px orange;
         
     }
      5%, 95%
     {
         color: #111;
-        filter: blur(2px);
+        
         text-shadow: 0 0 10px none;
         
     }
@@ -164,10 +181,10 @@ p
 }
 .image2
 {
-    width: 200px;
+    width: 140px;
     height: auto;
     position: absolute;
-    top: 5%;
-    left: 0;
+    top: 60%;
+    left: 12%;
 }
 
